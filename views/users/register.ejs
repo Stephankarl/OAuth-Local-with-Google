@@ -1,0 +1,8 @@
+<% include ../partials/messages %>
+
+<form action="/users/register" method="POST">
+    <input type="firstName" name="firstName" placeholder="First Name" value="<%= typeof firstName != 'undefined' ? firstName : '' %>">
+    <input type="email" name="email" placeholder="Email" value="<%= typeof email != 'undefined' ? email : '' %>">
+    <input type="password" name="password" placeholder="Password" value="<%= typeof password != 'undefined' ? password : '' %>">
+    <input type="submit" value="Register">
+</form>
